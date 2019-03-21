@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh 'mvn -B -DskipTests clean package sonar:sonar -Dsonar.host.url=http://localhost:9000   -Dsonar.login=admin -Dsonar.password=admin'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
 
